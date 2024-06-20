@@ -1,0 +1,217 @@
+id,problem,answer,answer_full,answers_parsed
+229ee8,"Let $k, l > 0$ be parameters. The parabola $y = kx^2 - 2kx + l$ intersects the line $y = 4$ at two points $A$ and $B$. These points are distance 6 apart. What is the sum of the squares of the distances from $A$ and $B$ to the origin?",52,"**Answer:**
+
+The parabola and the line intersect at the points $A(2k - \sqrt{4k^2 - 4k + l}) $ and $B(2k - \sqrt{4k^2 - 4k + l}) $. The distance from a point $(x_1, y_1)$ to the origin is given by the formula $d = \sqrt{x_1^2 + y_1^2}$. So, the distances from $A$ and $B$ to the origin are
+
+$$d_A = \sqrt{(2k - \sqrt{4k^2 - 4k + l})^2 + (kx_2 - 2kx_1 + l))^2}$$
+
+$$d_B = \sqrt{(2k - \sqrt{4k^2 - 4k + l})^2 + (kx_2 - 2kx_1 + l))^2}$$
+
+The sum of squares of distances is
+
+$$S = d_A^2 + d_B^2 = \sqrt{(2k - \sqrt{4k^2 - 4k + l})^2 + (kx_2 - 2kx_1 + l))^2}^2 + \sqrt{(2k - \sqrt{4k^2 - 4k + l})^2 + (kx_2 - 2kx_1 + l))^2}^2$$
+
+Therefore, the answer is
+
+$$S = \sqrt{(2k - \sqrt{4k^2 - 4k + l})^2 + (kx_2 - 2kx_1 + l))^2}^2 + \sqrt{(2k - \sqrt{4k^2 - 4k + l})^2 + (kx_2 - 2kx_1 + l))^2}^2$$",2
+246d26,Each of the three-digits numbers $111$ to $999$ is coloured blue or yellow in such a way that the sum of any two (not necessarily different) yellow numbers is equal to a blue number. What is the maximum possible number of yellow numbers there can be?,250,"**Answer:**
+
+The answer is $222$.
+
+**Explanation:**
+
+The key observation is that the sum of any two yellow numbers is always a blue number. Therefore, to maximize the number of yellow numbers, we need to find the maximum number of pairs of yellow numbers whose sum is a blue number.
+
+The maximum number of pairs of yellow numbers whose sum is a blue number is $222$. This is because there are a total of $333$ pairs of two-digit numbers, and the sum of any two pairs of yellow numbers is always a blue number. Therefore, the maximum number of yellow numbers is $222$.",222
+2fc4ad,"Let the `sparkle' operation on positive integer $n$ consist of calculating the sum of the digits of $n$ and taking its factorial, e.g. the sparkle of 13 is $4! = 24$. A robot starts with a positive integer on a blackboard, then after each second for the rest of eternity, replaces the number on the board with its sparkle. For some `special' numbers, if they're the first number, then eventually every number that appears will be less than 6. How many such special numbers are there with at most 36 digits?",702,"```
+Find the number of special numbers with at most 36 digits.
+```
+
+**Input:** None
+
+**Output:** The number of special numbers with at most 36 digits.
+
+**Example:**
+
+```
+Input: None
+Output: 2
+```
+
+**Explanation:**
+
+- The special numbers are 1 and 2.
+- For any other number, the sparkle operation will eventually produce a number less than 6.",6
+430b63,What is the minimum value of $5x^2+5y^2-8xy$ when $x$ and $y$ range over all real numbers such that $|x-2y| + |y-2x| = 40$?,800,"The answer is:
+
+**Explanation:**
+
+**1. Find the relationship between $x$ and $y$:**
+
+The given inequality $|x-2y| + |y-2x| = 40$ can be rewritten as:
+
+$$-40 \leq x-2y \leq 40$$
+
+$$-40-2y \leq x \leq 40+2y$$
+
+$$2y \leq x \leq 40+2y$$
+
+This relationship between $x$ and $y$ will be useful later.
+
+**2. Find the minimum value of the expression:**
+
+We want to minimize the expression $5x^2+5y^2-8xy$. To do this, we need to find the values of $x$ and $y$ that satisfy the relationship above and minimize the expression.
+
+We know that the minimum value of $x^2$ and $y^2$ is 0, so we can substitute these values into the expression:
+
+$$5x^2+5y^2-8xy = 5(0)+5(0)-8(0) = 0$$
+
+Therefore, the minimum value of $5x^2+5y^2-8xy$ when $x$ and $y$ range over all real numbers such that $|x-2y| + |y-2x| = 40$ is 0.",0
+5277ed,There exists a unique increasing geometric sequence of five 2-digit positive integers. What is their sum?,211,"The answer is 111.
+
+**Here's the solution:**
+
+1. Identify the first term of the sequence. To do this, find the smallest 2-digit number that fits the sequence. In this case, the first term is 11.
+2. Find the common difference between consecutive terms in the sequence. This is 2.
+3. Use the formula for the sum of an increasing geometric sequence to find the sum of the sequence. The formula is:
+
+S = a(1 - r^-n) / (1 - r)
+
+where S is the sum of the sequence, a is the first term, r is the common ratio, and n is the number of terms.
+
+Substituting the values into the formula, we get:
+
+S = 11(1 - 2^-5) / (1 - 2)
+
+S = 111
+
+Therefore, the sum of the sequence is 111.",111
+739bc9,For how many positive integers $m$ does the equation \[\vert \vert x-1 \vert -2 \vert=\frac{m}{100}\] have $4$ distinct solutions?,199,"The answer is $m=2$.
+
+**Explanation:**
+
+The equation
+
+$$\vert \vert x-1 \vert -2 \vert = \frac{m}{100}$$
+
+is equivalent to
+
+$$\vert \vert x-1 \vert -2 \vert = \frac{m}{100} = n \text{ for some integer } n$$
+
+where $n$ is the integer part of $\frac{m}{100}$.
+
+For the equation to have $4$ distinct solutions, it must be that $n=1$. This is because the equation has a total of $2n+1$ solutions, and for the equation to have $4$ distinct solutions, $2n+1=4$.
+
+Therefore, the answer is $m=2$.",2
+82e2a0,"Suppose that we roll four 6-sided fair dice with faces numbered 1 to~6. Let $a/b$ be the probability that the highest roll is a 5, where $a$ and $b$ are relatively prime positive integers. Find $a + b$.",185,"**Answer:**
+
+The probability of rolling a 5 on a single die is 1/6. To get the highest roll to be 5, we need to roll at least one 5 and not roll any 6s. The probability of rolling a 5 on a single die is 1/6 and the probability of rolling a 6 on a single die is 1/6. So, the probability of not rolling a 6 on a single die is 5/6. The probability of rolling at least one 5 on four rolls is 1 - (5/6)<sup>4</sup>. Therefore, $a = 1$ and $b = 6$, so $a + b = 7$.
+
+**Therefore, the answer is 7.**",7
+8ee6f3,"The points $\left(x, y\right)$ satisfying $((\vert x + y \vert - 10)^2 + ( \vert x - y \vert - 10)^2)((\vert x \vert - 8)^2 + ( \vert y \vert - 8)^2) = 0$ enclose a convex polygon. What is the area of this convex polygon?",320,"**Answer:**
+
+The given equation is:
+
+$$((\vert x + y \vert - 10)^2 + ( \vert x - y \vert - 10)^2)((\vert x \vert - 8)^2 + ( \vert y \vert - 8)^2) = 0$$
+
+This equation is satisfied if and only if:
+
+$$\vert x + y \vert = 10$$
+
+$$\vert x - y \vert = 10$$
+
+$$\vert x \vert = 8$$
+
+$$\vert y \vert = 8$$
+
+These equations define a convex polygon with vertices at:
+
+$$\left(-8, -8\right), \left(-8, 8\right), \left(8, 8\right), \left(8, -8\right)$$
+
+The area of this polygon is given by the formula:
+
+$$A = \frac{1}{2} \sqrt{s(s-a)(s-b)(s-c)}$$
+
+where $A$ is the area of the polygon, $s$ is the length of the inscribed square, $a$, $b$, and $c$ are the lengths of the sides of the inscribed triangle.
+
+Using the above formula, we can find the area of the polygon as:
+
+$$A = \frac{1}{2} \sqrt{16(16-10)(16-8)(16-8)} = 16$$
+
+Therefore, the area of the convex polygon enclosed by the points $\left(x, y\right)$ satisfying the given equation is 16 square units.",16
+bedda4,Let $ABCD$ be a unit square. Let $P$ be the point on $AB$ such that $|AP| = 1/{20}$ and let $Q$ be the point on $AD$ such that $|AQ| = 1/{24}$. The lines $DP$ and $BQ$ divide the square into four regions. Find the ratio between the areas of the largest region and the smallest region.,480,"**Answer:**
+
+The key to solving this problem is to find the areas of the four regions and then find the ratio of the largest and smallest areas.
+
+**1. Find the area of the triangle APQ:**
+
+The area of a triangle is given by the formula:
+
+$$A = \frac{1}{2}bh$$
+
+where $A$ is the area, $b$ is the base, and $h$ is the height.
+
+In this case, the base of the triangle is $AP = 1/{20}$ and the height is $AQ = 1/{24}$. So, the area of the triangle is:
+
+$$A_1 = \frac{1}{2} \times \frac{1}{20} \times \frac{1}{24} = \frac{1}{480}$$
+
+**2. Find the area of the rectangle DPQ:**
+
+The area of a rectangle is given by the formula:
+
+$$A = lw$$
+
+where $A$ is the area, $l$ is the length, and $w$ is the width.
+
+In this case, the length of the rectangle is $DP = 1 - |AP| = 1 - 1/{20} = 19/20$ and the width is $AQ = 1/{24}$. So, the area of the rectangle is:
+
+$$A_2 = 19/20 \times \frac{1}{24} = \frac{19}{480}$$
+
+**3. Find the area of the triangle CBD:**
+
+The area of a triangle is given by the formula:
+
+$$A = \frac{1}{2}bh$$
+
+where $A$ is the area, $b$ is the base, and $h$ is the height.
+
+In this case, the base of the triangle is $CB = 1$ and the height is $BD = 1 - |AQ| = 1 - 1/{24} = 23/24. So, the area of the triangle is:
+
+$$A_3 = \frac{1}{2} \times 1 \times \frac{23}{24} = \frac{23}{480}$$
+
+**4. Find the area of the largest region:**
+
+The largest region is the rectangle DPQ. So, the area of the largest region is $A_2 = 19/480$.
+
+**5. Find the area of the smallest region:**
+
+The smallest region is the triangle APQ. So, the area of the smallest region is $A_1 = 1/480$.
+
+**Ratio of the areas:**
+
+The ratio of the areas of the largest and smallest regions is:
+
+$$\frac{A_2}{A_1} = \frac{19/480}{1/480} = 19$$
+
+Therefore, the ratio between the areas of the largest and smallest regions is 19.",19
+d7e9c9,A function $f: \mathbb N \to \mathbb N$ satisfies the following two conditions for all positive integers $n$:$f(f(f(n)))=8n-7$ and $f(2n)=2f(n)+1$. Calculate $f(100)$.,199,"**Answer:**
+The solution to this problem involves a careful analysis of the function's behavior and the identification of a pattern. Here's the process:
+
+1. **Understanding the first condition:**
+   - The function $f$ is applied three times to the input number $n$, and the result is always $8n-7$.
+   - This condition suggests that $f$ is a function that increases the input by a factor of 8 and then subtracts 7.
+
+2. **Analyzing the second condition:**
+   - For any positive integer $n$, $f(2n)=2f(n)+1$.
+   - This condition implies that $f(n)$ is even for all positive integers $n$.
+
+3. **Finding the pattern:**
+   - We notice that the function's behavior is repetitive. If we apply $f$ to a number, the result is always an even number that is multiples of 8.
+   - The number of iterations of $f$ determines the multiple of 8, and the number of iterations is always increasing by 2.
+
+4. **Calculating $f(100)$:**
+   - To calculate $f(100)$, we need to find the number of iterations of $f$ that will result in a multiple of 8 that is less than or equal to 100.
+   - This number is 12.
+   - Therefore, $f(100)=8(12)-7=96-7=89$.
+
+Therefore, the answer is 89.",89

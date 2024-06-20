@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+
+\title{Language and Notation}
+\date{March 2024}
+
+\begin{document}
+\maketitle
+
+This is a compendium of things which we would normally explain in maths competitions for teenaged schoolchildren.
+
+\begin{enumerate}
+    \item Established mathematical notation will be used.
+    
+    \item We might use a colon or a vertical line as a separator in set notation so $\{x \mid x \in \mathbb{Z}, x > 0\} = \{y : y \in \mathbb{Z}, y > 0\}$.
+    
+    \item Floor and ceiling notation, so for $x$ a real number we let $\lfloor x \rfloor = \max\{z \mid z \in \mathbb{Z}, z \leq x\}$. Similarly, $\lceil x \rceil = \min\{z \mid z \in \mathbb{Z}, z \geq x\}$.
+    
+    \item Fractional part notation. If $x$ is a real number, we define $\{x\}$ to mean $x - \lfloor x \rfloor$.
+    
+    \item We write a line over a non-negative integer written in base 10 notation to indicate that it is being viewed as a string of digits rather than a number. Thus the second digit of $1729$ is $7$ but $1729$ does not have a second digit because it is an integer.
+    
+    \item We allow a phrase such as $x$ is a 3-digit positive integer to mean that if written in Arabic notation as $x = a_m a_{m-1} \ldots a_1 a_0$ with all $a_i$ digits and $a_m \neq 0$, then $n = m$. We allow ``the sum of the digits of $n$'' to mean: write $n$ in Arabic base 10 notation and then sum the digits.
+    
+    \item We allow informal probability language such as: a point is chosen uniformly at random in the interval $[0,1]$.
+    
+    \item We use $(n)$ to denote the number of ways of choosing $r$ things from $n$ things.
+    
+    \item The sum over the empty set is 0 and the product over the empty set is 1.
+    
+    \item We use an ellipsis to denote an obvious pattern, either on the line of print of midline (as appropriate) so the set of the first $n$ positive integers can be written $\{1, 2, \ldots, n\}$ and their sum is $1 + 2 + \ldots + n$.
+    
+    \item For integers $m, n$, then $m^n$ denotes $(m^n)$.
+    
+    \item $m^0 = 1$ for all integers $m$ (including 0) if doing combinatorial enumeration. If $x$ is real then $x^0$ needs to be clarified if $x = 0$.
+    
+    \item British or American versions of English can be used. Thus ``highest common factor'' means the same as ``greatest common divisor''.
+    
+    \item A prefix or subscript may be used to indicate features of a triangle associated with vertices. Thus triangle $ABC$ has three altitudes, and the one dropped from $A$ could be denoted the altitude through $A$, the $A$-altitude or the altitude $a$. Similarly for median lines.
+    
+    \item If the term \textit{natural number} is used, then it will be made clear if 0 is a natural number.
+    
+    \item `:=` means 'is defined to be equal to'.
+\end{enumerate}
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|p{10cm}|c|}
+\hline
+\textbf{id} & \textbf{problem} & \textbf{answer} \\ \hline
+229ee8 & Let $k, l > 0$ be parameters. The parabola $y = kx^2 - 2kx + l$ intersects the line $y = 4$ at two points $A$ and $B$. These points are distance 6 apart. What is the sum of the squares of the distances from $A$ and $B$ to the origin? & 52 \\ \hline
+246d26 & Each of the three-digits numbers $111$ to $999$ is coloured blue or yellow in such a way that the sum of any two (not necessarily different) yellow numbers is equal to a blue number. What is the maximum possible number of yellow numbers there can be? & 250 \\ \hline
+2fc4ad & Let the `sparkle' operation on positive integer $n$ consist of calculating the sum of the digits of $n$ and taking its factorial, e.g. the sparkle of 13 is $4! = 24$. A robot starts with a positive integer on a blackboard, then after each second for the rest of eternity, replaces the number on the board with its sparkle. For some `special' numbers, if they're the first number, then eventually every number that appears will be less than 6. How many such special numbers are there with at most 36 digits? & 702 \\ \hline
+430b63 & What is the minimum value of $5x^2+5y^2-8xy$ when $x$ and $y$ range over all real numbers such that $|x-2y| + |y-2x| = 40$? & 800 \\ \hline
+5277ed & There exists a unique increasing geometric sequence of five 2-digit positive integers. What is their sum? & 211 \\ \hline
+739bc9 & For how many positive integers $m$ does the equation \[\vert \vert x-1 \vert -2 \vert=\frac{m}{100}\] have $4$ distinct solutions? & 199 \\ \hline
+82e2a0 & Suppose that we roll four 6-sided fair dice with faces numbered 1 to~6. Let $a/b$ be the probability that the highest roll is a 5, where $a$ and $b$ are relatively prime positive integers. Find $a + b$. & 185 \\ \hline
+8ee6f3 & The points $\left(x, y\right)$ satisfying $((\vert x + y \vert - 10)^2 + ( \vert x - y \vert - 10)^2)((\vert x \vert - 8)^2 + ( \vert y \vert - 8)^2) = 0$ enclose a convex polygon. What is the area of this convex polygon? & 320 \\ \hline
+bedda4 & Let $ABCD$ be a unit square. Let $P$ be the point on $AB$ such that $|AP| = 1/{20}$ and let $Q$ be the point on $AD$ such that $|AQ| = 1/{24}$. The lines $DP$ and $BQ$ divide the square into four regions. Find the ratio between the areas of the largest region and the smallest region. & 480 \\ \hline
+d7e9c9 & A function $f: \mathbb{N} \to \mathbb{N}$ satisfies the following two conditions for all positive integers $n$:$f(f(f(n)))=8n-7$ and $f(2n)=2f(n)+1$. Calculate $f(100)$. & 199 \\ \hline
+\end{tabular}
+\caption{Train.csv data}
+\end{table}
+
+
+\end{document}
