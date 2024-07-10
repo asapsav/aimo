@@ -1,0 +1,248 @@
+# dataset init
+import pandas as pd
+
+df = pd.read_csv("hf://datasets/qq8933/AIME_1983_2024/AIME_Dataset_1983_2024.csv")
+# set random seed
+import random
+random.seed(69)
+df_sample = df.sample(50, random_state=69)
+df_sample['Answer'] = df_sample['Answer'].astype(int)
+
+Processed prompts: 100%|██████████| 128/128 [00:20<00:00,  6.14it/s, est. speed input: 441.87 toks/s, output: 2124.88 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 119/119 [00:19<00:00,  6.11it/s, est. speed input: 2515.48 toks/s, output: 967.38 toks/s]
+ground_truth_hit_count =  25
+Processed prompts: 100%|██████████| 25/25 [00:15<00:00,  1.58it/s, est. speed input: 1341.81 toks/s, output: 522.63 toks/s]
+ground_truth_hit_count =  25
+Processed prompts: 100%|██████████| 128/128 [00:21<00:00,  5.93it/s, est. speed input: 486.50 toks/s, output: 2172.49 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 83/83 [00:18<00:00,  4.53it/s, est. speed input: 1951.02 toks/s, output: 968.53 toks/s]
+ground_truth_hit_count =  2
+Processed prompts: 100%|██████████| 34/34 [00:12<00:00,  2.74it/s, est. speed input: 2137.84 toks/s, output: 599.32 toks/s]
+ground_truth_hit_count =  2
+Processed prompts: 100%|██████████| 128/128 [00:24<00:00,  5.24it/s, est. speed input: 849.07 toks/s, output: 2117.56 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 112/112 [00:20<00:00,  5.59it/s, est. speed input: 3181.09 toks/s, output: 726.19 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 51/51 [00:14<00:00,  3.45it/s, est. speed input: 2788.85 toks/s, output: 377.99 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:21<00:00,  5.84it/s, est. speed input: 1214.26 toks/s, output: 1771.27 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 113/113 [00:17<00:00,  6.31it/s, est. speed input: 3231.62 toks/s, output: 576.52 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 15/15 [00:13<00:00,  1.11it/s, est. speed input: 913.88 toks/s, output: 231.94 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:20<00:00,  6.14it/s, est. speed input: 632.25 toks/s, output: 2043.78 toks/s]
+write() argument must be str, not None
+Processed prompts: 100%|██████████| 128/128 [00:18<00:00,  6.76it/s, est. speed input: 594.69 toks/s, output: 1855.65 toks/s]
+ground_truth_hit_count =  6
+Processed prompts: 100%|██████████| 111/111 [00:17<00:00,  6.28it/s, est. speed input: 2208.09 toks/s, output: 849.24 toks/s]
+ground_truth_hit_count =  63
+Processed prompts: 100%|██████████| 33/33 [00:11<00:00,  2.79it/s, est. speed input: 1890.76 toks/s, output: 570.04 toks/s]
+ground_truth_hit_count =  67
+Processed prompts: 100%|██████████| 128/128 [00:19<00:00,  6.69it/s, est. speed input: 655.30 toks/s, output: 1711.58 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 121/121 [00:23<00:00,  5.11it/s, est. speed input: 1867.26 toks/s, output: 1537.09 toks/s]
+ground_truth_hit_count =  24
+Processed prompts: 100%|██████████| 31/31 [00:15<00:00,  2.01it/s, est. speed input: 1452.11 toks/s, output: 557.23 toks/s]
+ground_truth_hit_count =  24
+Processed prompts: 100%|██████████| 128/128 [00:27<00:00,  4.71it/s, est. speed input: 672.88 toks/s, output: 2293.40 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 80/80 [00:19<00:00,  4.07it/s, est. speed input: 2412.32 toks/s, output: 846.22 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 30/30 [00:13<00:00,  2.25it/s, est. speed input: 2111.85 toks/s, output: 524.40 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:29<00:00,  4.36it/s, est. speed input: 1692.06 toks/s, output: 1780.47 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 115/115 [00:25<00:00,  4.55it/s, est. speed input: 3668.68 toks/s, output: 879.22 toks/s]
+write() argument must be str, not None
+Processed prompts: 100%|██████████| 128/128 [00:30<00:00,  4.19it/s, est. speed input: 800.95 toks/s, output: 2245.50 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 64/64 [00:18<00:00,  3.53it/s, est. speed input: 2435.06 toks/s, output: 725.71 toks/s]
+ground_truth_hit_count =  1
+Processed prompts: 100%|██████████| 16/16 [00:14<00:00,  1.09it/s, est. speed input: 1265.42 toks/s, output: 395.42 toks/s]
+ground_truth_hit_count =  1
+Processed prompts: 100%|██████████| 128/128 [00:16<00:00,  7.66it/s, est. speed input: 743.15 toks/s, output: 1886.72 toks/s]
+ground_truth_hit_count =  1
+Processed prompts: 100%|██████████| 121/121 [00:17<00:00,  7.11it/s, est. speed input: 2522.69 toks/s, output: 687.95 toks/s]
+ground_truth_hit_count =  71
+Processed prompts: 100%|██████████| 28/28 [00:14<00:00,  1.91it/s, est. speed input: 1383.39 toks/s, output: 455.27 toks/s]
+ground_truth_hit_count =  75
+Processed prompts: 100%|██████████| 128/128 [00:17<00:00,  7.18it/s, est. speed input: 524.10 toks/s, output: 1714.30 toks/s]
+write() argument must be str, not None
+Processed prompts: 100%|██████████| 128/128 [00:29<00:00,  4.36it/s, est. speed input: 759.29 toks/s, output: 2271.55 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 65/65 [00:20<00:00,  3.22it/s, est. speed input: 2188.78 toks/s, output: 907.59 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 39/39 [00:19<00:00,  2.03it/s, est. speed input: 2182.76 toks/s, output: 644.29 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:28<00:00,  4.48it/s, est. speed input: 820.53 toks/s, output: 2236.46 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 72/72 [00:21<00:00,  3.28it/s, est. speed input: 2065.68 toks/s, output: 1130.57 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 37/37 [00:19<00:00,  1.93it/s, est. speed input: 1988.52 toks/s, output: 668.01 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:26<00:00,  4.92it/s, est. speed input: 797.48 toks/s, output: 2168.33 toks/s]
+ground_truth_hit_count =  1
+Processed prompts: 100%|██████████| 78/78 [00:19<00:00,  4.00it/s, est. speed input: 2145.63 toks/s, output: 981.51 toks/s]
+ground_truth_hit_count =  1
+Processed prompts: 100%|██████████| 24/24 [00:15<00:00,  1.55it/s, est. speed input: 1509.68 toks/s, output: 450.48 toks/s]
+ground_truth_hit_count =  2
+Processed prompts: 100%|██████████| 128/128 [00:24<00:00,  5.18it/s, est. speed input: 445.27 toks/s, output: 2339.34 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 63/63 [00:15<00:00,  4.04it/s, est. speed input: 1924.82 toks/s, output: 581.02 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 20/20 [00:13<00:00,  1.43it/s, est. speed input: 1163.06 toks/s, output: 308.41 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:24<00:00,  5.31it/s, est. speed input: 1482.76 toks/s, output: 1785.10 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 109/109 [00:21<00:00,  5.10it/s, est. speed input: 3179.94 toks/s, output: 839.82 toks/s]
+ground_truth_hit_count =  1
+Processed prompts: 100%|██████████| 57/57 [00:18<00:00,  3.03it/s, est. speed input: 2679.48 toks/s, output: 615.70 toks/s]
+ground_truth_hit_count =  1
+Processed prompts: 100%|██████████| 128/128 [00:30<00:00,  4.24it/s, est. speed input: 657.36 toks/s, output: 2254.67 toks/s]
+ground_truth_hit_count =  2
+Processed prompts: 100%|██████████| 66/66 [00:22<00:00,  2.93it/s, est. speed input: 1929.92 toks/s, output: 1130.23 toks/s]
+ground_truth_hit_count =  4
+Processed prompts: 100%|██████████| 44/44 [00:19<00:00,  2.25it/s, est. speed input: 2331.85 toks/s, output: 692.93 toks/s]
+ground_truth_hit_count =  5
+Processed prompts: 100%|██████████| 128/128 [00:26<00:00,  4.82it/s, est. speed input: 993.82 toks/s, output: 2119.25 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 102/102 [00:23<00:00,  4.33it/s, est. speed input: 2683.73 toks/s, output: 1125.28 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 46/46 [00:19<00:00,  2.31it/s, est. speed input: 2279.64 toks/s, output: 668.69 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:22<00:00,  5.75it/s, est. speed input: 724.97 toks/s, output: 2145.34 toks/s]
+ground_truth_hit_count =  2
+Processed prompts: 100%|██████████| 24/24 [00:12<00:00,  1.91it/s, est. speed input: 935.35 toks/s, output: 205.86 toks/s] 
+ground_truth_hit_count =  3
+Processed prompts: 100%|██████████| 1/1 [00:00<00:00,  1.02it/s, est. speed input: 675.10 toks/s, output: 55.15 toks/s]
+ground_truth_hit_count =  3
+Processed prompts: 100%|██████████| 128/128 [00:24<00:00,  5.15it/s, est. speed input: 602.78 toks/s, output: 2282.18 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 104/104 [00:23<00:00,  4.46it/s, est. speed input: 2538.73 toks/s, output: 1143.98 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 78/78 [00:22<00:00,  3.48it/s, est. speed input: 2988.92 toks/s, output: 827.91 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:25<00:00,  4.95it/s, est. speed input: 782.57 toks/s, output: 2188.56 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 106/106 [00:28<00:00,  3.68it/s, est. speed input: 2278.61 toks/s, output: 1383.07 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 75/75 [00:27<00:00,  2.74it/s, est. speed input: 2808.71 toks/s, output: 966.18 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:22<00:00,  5.66it/s, est. speed input: 736.19 toks/s, output: 2161.98 toks/s]
+ground_truth_hit_count =  4
+Processed prompts: 100%|██████████| 89/89 [00:20<00:00,  4.38it/s, est. speed input: 2113.70 toks/s, output: 1095.06 toks/s]
+ground_truth_hit_count =  15
+Processed prompts: 100%|██████████| 51/51 [00:18<00:00,  2.75it/s, est. speed input: 2276.69 toks/s, output: 680.87 toks/s]
+ground_truth_hit_count =  20
+Processed prompts: 100%|██████████| 128/128 [00:17<00:00,  7.38it/s, est. speed input: 383.66 toks/s, output: 1762.11 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 88/88 [00:11<00:00,  7.68it/s, est. speed input: 2286.77 toks/s, output: 951.15 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 27/27 [00:07<00:00,  3.51it/s, est. speed input: 2092.75 toks/s, output: 640.05 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:17<00:00,  7.40it/s, est. speed input: 629.17 toks/s, output: 1602.88 toks/s]
+ground_truth_hit_count =  1
+Processed prompts: 100%|██████████| 124/124 [00:30<00:00,  4.09it/s, est. speed input: 1268.03 toks/s, output: 1959.09 toks/s]
+write() argument must be str, not None
+Processed prompts: 100%|██████████| 128/128 [00:21<00:00,  5.99it/s, est. speed input: 1047.72 toks/s, output: 1827.61 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 124/124 [00:32<00:00,  3.86it/s, est. speed input: 1991.26 toks/s, output: 1621.08 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 89/89 [00:31<00:00,  2.79it/s, est. speed input: 2718.68 toks/s, output: 1059.59 toks/s]
+write() argument must be str, not None
+Processed prompts: 100%|██████████| 128/128 [00:28<00:00,  4.50it/s, est. speed input: 876.73 toks/s, output: 2197.40 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 59/59 [00:18<00:00,  3.26it/s, est. speed input: 1997.27 toks/s, output: 804.53 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 30/30 [00:15<00:00,  1.91it/s, est. speed input: 1816.54 toks/s, output: 443.37 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:25<00:00,  4.99it/s, est. speed input: 768.54 toks/s, output: 2231.54 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 85/85 [00:17<00:00,  4.94it/s, est. speed input: 2746.52 toks/s, output: 926.69 toks/s]
+ground_truth_hit_count =  1
+Processed prompts: 100%|██████████| 46/46 [00:17<00:00,  2.60it/s, est. speed input: 2285.74 toks/s, output: 628.42 toks/s]
+ground_truth_hit_count =  1
+Processed prompts: 100%|██████████| 128/128 [00:25<00:00,  5.06it/s, est. speed input: 663.29 toks/s, output: 2232.14 toks/s]
+ground_truth_hit_count =  1
+Processed prompts: 100%|██████████| 87/87 [00:19<00:00,  4.37it/s, est. speed input: 2471.77 toks/s, output: 956.58 toks/s]
+ground_truth_hit_count =  2
+Processed prompts: 100%|██████████| 42/42 [00:18<00:00,  2.23it/s, est. speed input: 2052.66 toks/s, output: 623.27 toks/s]
+write() argument must be str, not None
+Processed prompts: 100%|██████████| 128/128 [00:19<00:00,  6.50it/s, est. speed input: 760.67 toks/s, output: 1679.45 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 122/122 [00:19<00:00,  6.18it/s, est. speed input: 2292.17 toks/s, output: 1145.76 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 17/17 [00:14<00:00,  1.21it/s, est. speed input: 1062.75 toks/s, output: 414.89 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:09<00:00, 13.06it/s, est. speed input: 652.97 toks/s, output: 2286.19 toks/s]
+write() argument must be str, not None
+Processed prompts: 100%|██████████| 128/128 [00:27<00:00,  4.68it/s, est. speed input: 838.37 toks/s, output: 2168.92 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 77/77 [00:20<00:00,  3.80it/s, est. speed input: 2425.44 toks/s, output: 940.73 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 46/46 [00:16<00:00,  2.74it/s, est. speed input: 2741.38 toks/s, output: 679.95 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:19<00:00,  6.53it/s, est. speed input: 1064.49 toks/s, output: 1565.97 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 121/121 [00:21<00:00,  5.74it/s, est. speed input: 2358.65 toks/s, output: 1238.30 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 72/72 [00:19<00:00,  3.64it/s, est. speed input: 2394.65 toks/s, output: 811.85 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:21<00:00,  6.05it/s, est. speed input: 877.26 toks/s, output: 1906.15 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 117/117 [00:18<00:00,  6.36it/s, est. speed input: 3026.63 toks/s, output: 648.29 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 17/17 [00:13<00:00,  1.25it/s, est. speed input: 922.76 toks/s, output: 259.75 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:19<00:00,  6.55it/s, est. speed input: 367.03 toks/s, output: 2079.17 toks/s]
+ground_truth_hit_count =  1
+Processed prompts: 100%|██████████| 49/49 [00:10<00:00,  4.54it/s, est. speed input: 1567.05 toks/s, output: 474.27 toks/s]
+ground_truth_hit_count =  2
+Processed prompts: 100%|██████████| 4/4 [00:04<00:00,  1.07s/it, est. speed input: 683.46 toks/s, output: 113.83 toks/s]
+ground_truth_hit_count =  3
+Processed prompts: 100%|██████████| 128/128 [00:11<00:00, 10.76it/s, est. speed input: 2398.50 toks/s, output: 1840.88 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:12<00:00, 10.18it/s, est. speed input: 4163.01 toks/s, output: 816.91 toks/s] 
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 16/16 [00:05<00:00,  3.03it/s, est. speed input: 1864.28 toks/s, output: 300.81 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:21<00:00,  6.09it/s, est. speed input: 706.65 toks/s, output: 2043.43 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 120/120 [00:20<00:00,  5.91it/s, est. speed input: 2776.62 toks/s, output: 950.65 toks/s]
+ground_truth_hit_count =  10
+Processed prompts: 100%|██████████| 34/34 [00:15<00:00,  2.25it/s, est. speed input: 1925.39 toks/s, output: 575.63 toks/s]
+ground_truth_hit_count =  11
+Processed prompts: 100%|██████████| 128/128 [00:23<00:00,  5.52it/s, est. speed input: 1175.15 toks/s, output: 1913.68 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 76/76 [00:16<00:00,  4.64it/s, est. speed input: 2709.74 toks/s, output: 392.63 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 7/7 [00:11<00:00,  1.62s/it, est. speed input: 599.59 toks/s, output: 140.15 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:12<00:00,  9.86it/s, est. speed input: 1410.16 toks/s, output: 2330.10 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:17<00:00,  7.44it/s, est. speed input: 2870.36 toks/s, output: 449.93 toks/s]
+ground_truth_hit_count =  41
+Processed prompts: 100%|██████████| 7/7 [00:06<00:00,  1.09it/s, est. speed input: 796.49 toks/s, output: 154.65 toks/s]
+ground_truth_hit_count =  41
+Processed prompts: 100%|██████████| 128/128 [00:20<00:00,  6.22it/s, est. speed input: 765.63 toks/s, output: 2358.88 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 125/125 [00:16<00:00,  7.69it/s, est. speed input: 3949.16 toks/s, output: 890.45 toks/s]
+ground_truth_hit_count =  40
+Processed prompts: 100%|██████████| 38/38 [00:13<00:00,  2.88it/s, est. speed input: 2378.71 toks/s, output: 577.27 toks/s]
+ground_truth_hit_count =  46
+Processed prompts: 100%|██████████| 128/128 [00:21<00:00,  6.03it/s, est. speed input: 898.56 toks/s, output: 2091.40 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 125/125 [00:29<00:00,  4.20it/s, est. speed input: 2304.30 toks/s, output: 1453.52 toks/s]
+ground_truth_hit_count =  0
+Processed prompts:   0%|          | 0/112 [00:00<?, ?it/s, est. speed input: 0.00 toks/s, output: 0.00 toks/s]WARNING 06-27 00:38:29 scheduler.py:1089] Sequence group 10258 is preempted by PreemptionMode.RECOMPUTE mode because there is not enough KV cache space. This can affect the end-to-end performance. Increase gpu_memory_utilization or tensor_parallel_size to provide more KV cache memory. total_num_cumulative_preemption=1
+Processed prompts: 100%|██████████| 112/112 [00:38<00:00,  2.93it/s, est. speed input: 2824.42 toks/s, output: 1057.60 toks/s]
+ground_truth_hit_count =  0
+Processed prompts: 100%|██████████| 128/128 [00:20<00:00,  6.40it/s, est. speed input: 569.48 toks/s, output: 2042.73 toks/s]
+ground_truth_hit_count =  1
+Processed prompts: 100%|██████████| 114/114 [00:22<00:00,  5.00it/s, est. speed input: 2071.51 toks/s, output: 1351.22 toks/s]
+ground_truth_hit_count =  22
+Processed prompts: 100%|██████████| 76/76 [00:23<00:00,  3.30it/s, est. speed input: 2601.55 toks/s, output: 965.51 toks/s]
+ground_truth_hit_count =  33
+Processed prompts: 100%|██████████| 128/128 [00:14<00:00,  8.82it/s, est. speed input: 643.82 toks/s, output: 2215.62 toks/s]
