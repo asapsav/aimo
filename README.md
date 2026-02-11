@@ -10,3 +10,6 @@
 2. Script to run AlphaGeometry in collab.
 3. Increased inference speed on 2x T4 from 20 toks/sec up to 2000 toks/sec.
 4. Experiments with features to select correct solution in speculative sampling.
+
+<img width="4800" height="2960" alt="savelii - AI Mathematical Olympiad - Progress Prize 1" src="https://github.com/user-attachments/assets/b8f279f4-255a-4528-805e-0f463f6ecc21" />
+
